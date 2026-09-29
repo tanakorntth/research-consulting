@@ -538,6 +538,150 @@
       .workflow-card p{font-size:20px}
       .workflow-note{font-size:18px}
     }
+
+    /* =========================================================
+       PROFILE + LINE QR
+    ========================================================== */
+    .hero-profile{
+      position:relative;
+      display:grid;
+      grid-template-columns:118px 1fr;
+      gap:16px;
+      align-items:center;
+      margin-top:20px;
+      padding:14px;
+      border-radius:20px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.11);
+    }
+    .hero-profile img{
+      width:118px;
+      height:118px;
+      object-fit:cover;
+      object-position:center 18%;
+      border-radius:18px;
+      border:3px solid rgba(255,255,255,.88);
+      box-shadow:0 12px 28px rgba(0,0,0,.20);
+    }
+    .hero-profile-name{
+      color:#FFFFFF;
+      font-size:28px;
+      line-height:1;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+    .hero-profile-role{
+      margin-top:7px;
+      color:#F2CC6D;
+      font-size:21px;
+      line-height:1.05;
+      font-weight:700;
+    }
+    .hero-profile-meta{
+      margin-top:5px;
+      color:#C6D7E3;
+      font-size:17px;
+      line-height:1.1;
+    }
+    .contact-owner{
+      display:grid;
+      grid-template-columns:92px 1fr;
+      gap:15px;
+      align-items:center;
+      margin-top:18px;
+      padding:14px;
+      border-radius:18px;
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.11);
+    }
+    .contact-owner img{
+      width:92px;
+      height:92px;
+      object-fit:cover;
+      object-position:center 18%;
+      border-radius:16px;
+      border:3px solid rgba(255,255,255,.85);
+    }
+    .contact-owner strong{
+      display:block;
+      color:#FFFFFF;
+      font-size:27px;
+      line-height:1;
+    }
+    .contact-owner span{
+      display:block;
+      margin-top:6px;
+      color:#F0D17A;
+      font-size:20px;
+      line-height:1.05;
+    }
+    .line-qr-panel{
+      padding:18px;
+      border-radius:20px;
+      text-align:center;
+      background:#FFFFFF;
+      color:var(--navy);
+      box-shadow:0 14px 34px rgba(0,0,0,.16);
+    }
+    .line-qr-panel img{
+      display:block;
+      width:min(190px,70vw);
+      height:auto;
+      margin:0 auto;
+      padding:7px;
+      border-radius:15px;
+      background:#FFFFFF;
+    }
+    .line-qr-panel strong{
+      display:block;
+      margin-top:10px;
+      font-size:28px;
+      line-height:1;
+    }
+    .line-qr-panel small{
+      display:block;
+      margin-top:5px;
+      color:#647789;
+      font-size:19px;
+      line-height:1.1;
+    }
+    .line-qr-panel a{
+      display:inline-flex;
+      margin-top:11px;
+      padding:9px 13px;
+      border-radius:12px;
+      background:var(--navy);
+      color:#FFFFFF;
+      font-size:20px;
+      font-weight:700;
+      line-height:1;
+    }
+    @media(max-width:720px){
+      .hero-profile{
+        grid-template-columns:86px 1fr;
+        gap:12px;
+      }
+      .hero-profile img{
+        width:86px;
+        height:86px;
+        border-radius:15px;
+      }
+      .hero-profile-name{font-size:23px}
+      .hero-profile-role{font-size:18px}
+      .hero-profile-meta{font-size:15px}
+      .contact-owner{
+        grid-template-columns:76px 1fr;
+      }
+      .contact-owner img{
+        width:76px;
+        height:76px;
+      }
+      .contact-owner strong{font-size:23px}
+      .contact-owner span{font-size:18px}
+      .line-qr-panel strong{font-size:25px}
+      .line-qr-panel small{font-size:18px}
+    }
+
 </style>
 </head>
 <body>
@@ -600,6 +744,15 @@
           <div class="showcase-top">
             <span class="showcase-kicker">ONE PROJECT · ONE WORKFLOW</span>
             <span class="showcase-status">ครบวงจร</span>
+          </div>
+
+          <div class="hero-profile">
+            <img src="profile.jpg" alt="TANAKORN THAWORNAPICHAT">
+            <div>
+              <div class="hero-profile-name">TANAKORN THAWORNAPICHAT</div>
+              <div class="hero-profile-role">Research Consulting & Digital Solution</div>
+              <div class="hero-profile-meta">Research · R2R · CQI · R&D · Web · App · Game</div>
+            </div>
           </div>
 
           <h2>Research <span>×</span> Digital<br>ในโครงการเดียว</h2>
@@ -920,6 +1073,14 @@
           <h3>มีหัวข้อหรือไอเดียอยู่แล้ว?</h3>
           <p>ส่งรายละเอียดเบื้องต้น เช่น ประเภทงาน ระดับการศึกษา เป้าหมาย ขอบเขต และกำหนดเวลา เพื่อประเมินแนวทางและราคาให้เหมาะกับโครงการ</p>
 
+          <div class="contact-owner">
+            <img src="profile.jpg" alt="TANAKORN THAWORNAPICHAT">
+            <div>
+              <strong>TANAKORN THAWORNAPICHAT</strong>
+              <span>Research Consulting & Digital Solution</span>
+            </div>
+          </div>
+
           <div class="contact-grid">
             <a class="contact-link" href="tel:0886380122">
               <span class="contact-icon">☎</span>
@@ -936,6 +1097,12 @@
           </div>
         </div>
         <div class="cta-actions">
+          <div class="line-qr-panel">
+            <img src="line-qr.png" alt="LINE QR Code - TANAKORN THAWORNAPICHAT">
+            <strong>สแกนเพื่อคุยทาง LINE</strong>
+            <small>LINE ID: 0886380122</small>
+            <a href="https://line.me/ti/p/~0886380122" target="_blank" rel="noopener">เปิด LINE</a>
+          </div>
           <div class="cta-action"><span>01</span> ส่งหัวข้อหรือโจทย์ที่ต้องการทำ</div>
           <div class="cta-action"><span>02</span> ระบุประเภทงานและกำหนดเวลา</div>
           <div class="cta-action"><span>03</span> ประเมินขอบเขตและราคา</div>
